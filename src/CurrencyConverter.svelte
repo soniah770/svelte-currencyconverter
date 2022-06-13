@@ -76,7 +76,6 @@ items-center justify-center py-[100px] relative z-[800]">
      rounded mb-2 appearance-none bg-[white]" type="number" name="currencyAmount"  bind:value="{lastAmount}" />
     <br /> <br/>
 
-        <select class="px-4 py-5 rounded-full border-[#eb5f57] appearance-none bg-[#eb5f57] text-5xl text-white" bind:value={convertFrom} >
             <select class="px-4 py-5 pb-9 appearance-none text-[#eb5f57] rounded-full border-[#faf8f9]" bind:value={convertTo} on:change="{convertCurrency}">
     <span class="text-[#eb5f57]">{lastAmount}</span>
 
