@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
     let firstAmount = 0.00;
     let convertFrom = 'NOK';
@@ -35,9 +35,6 @@
     <div id="currency-converter" class="flex flex-col 
                     items-center justify-center">
 
-        <h1 class="font-bold text-3xl font-sans justify-center mb-10">
-            
-        </h1> <br />
         <select class="px-4 py-5 rounded-full border-[#eb5f57] appearance-none bg-[#eb5f57] text-5xl text-white" bind:value={convertFrom} >
             {#each currencyList as cl }
                 <option value="{cl.name}">
@@ -68,22 +65,18 @@ items-center justify-center py-[100px] relative z-[800]">
        </svg>
      </button>
 </div>
-    <div  class="flex flex-col 
-    items-center justify-center bg-[#faf8f9] >
+    <div  class="flex flex-col items-center justify-center bg-[#faf8f9] >
 
-    <span class="text-2xl text-[#eb5f57] bg-[#faf8f9]"> {finalAmount}</span>
     <br /> 
 
-            <select class="px-4 py-5 pb-9 appearance-none text-[#eb5f57] rounded-full border-[#faf8f9]" bind:value={convertTo} on:change="{convertCurrency}">
-    <span class="text-[#eb5f57]">{lastAmount}</span>
-
+    <select class="px-4 py-5 rounded-full text-5xl text-[#eb5f57] border-[#faf8f9] appearance-none bg-[#faf8f9] " bind:value={convertTo} on:change="{convertCurrency}" >
         {#each currencyList as cl }
             <option value="{cl.name}">
                 {cl.desc}
             </option>
         {/each}
-    </select><br/>
     
+    <span class="text-[#eb5f57] bg-[#faf8f9]">{lastAmount}</span>
 
     
     <br/>
