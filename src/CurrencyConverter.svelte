@@ -1,8 +1,8 @@
-<script lang='ts'>
+<script>
 
     let firstAmount = 0.00;
     let convertFrom = 'NOK';
-    let lastAmount = 0.00;
+    let lastAmount = ' ';
     let convertTo = '';
 	let Apikey = '0f19f0d65512ec902fae';
 
@@ -30,7 +30,7 @@
 </script>
 
 <div class="grid grid-rows-2">
- <div class="w-fullm bg-[#eb5f57] h-[500px] " >
+ <div class="w-fullm bg-[#eb5f57] h-[500px] -z-[800] " >
 
     <div id="currency-converter" class="flex flex-col 
                     items-center justify-center">
@@ -69,12 +69,10 @@ items-center justify-center py-[100px] relative z-[800]">
      </button>
 </div>
     <div  class="flex flex-col 
-    items-center justify-center bg-[#faf8f9] z-[400]">
+    items-center justify-center bg-[#faf8f9] >
 
-    <input class="text-lg text-[#eb5f57] border-none
-   border
-     rounded mb-2 appearance-none bg-[white]" type="number" name="currencyAmount"  bind:value="{lastAmount}" />
-    <br /> <br/>
+    <span class="text-2xl text-[#eb5f57] bg-[#faf8f9]"> {finalAmount}</span>
+    <br /> 
 
             <select class="px-4 py-5 pb-9 appearance-none text-[#eb5f57] rounded-full border-[#faf8f9]" bind:value={convertTo} on:change="{convertCurrency}">
     <span class="text-[#eb5f57]">{lastAmount}</span>
