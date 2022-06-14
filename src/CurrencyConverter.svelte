@@ -50,13 +50,8 @@
         mr-3 mt-8 py-5 px-4 h-2 border
          rounded mb-2 appearance-none bg-[#eb5f57]" type="number" name="currencyAmount" placeholder="Enter Amount" bind:value="{firstAmount}" />
         <br /> <br/>
-
-       
     </div>
- 
-
-   
-</div>
+ </div>
 <div class="flex flex-col 
 items-center justify-center py-[100px] relative z-[800]">
  <button class="rounded-full border-[#eb5f57] bg-[#fff] border-8  outline-[#eb5f57] outline-4">
