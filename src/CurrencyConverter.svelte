@@ -2,7 +2,7 @@
 
     let firstAmount = 0.00;
     let convertFrom = 'NOK';
-    let lastAmount = ' ';
+    let lastAmount = 0.00;
     let convertTo = '';
 	let Apikey = '0f19f0d65512ec902fae';
 
@@ -65,7 +65,8 @@ items-center justify-center py-[100px] relative z-[800]">
        </svg>
      </button>
 </div>
-    <div  class="flex flex-col items-center justify-center bg-[#faf8f9] >
+    <div  class="flex flex-
+     items-center justify-center bg-[#faf8f9]" >
 
     <br /> 
 
@@ -75,8 +76,8 @@ items-center justify-center py-[100px] relative z-[800]">
                 {cl.desc}
             </option>
         {/each}
+    </select>
     
-    <span class="text-[#eb5f57] bg-[#faf8f9]">{lastAmount}</span>
 
     
     <br/>
